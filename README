@@ -1,0 +1,29 @@
+This is a plugin for add restructured text to your articles.
+
+Requirement:
+----------------------------
+
+It supports pygment code highlight. You need to install pygment first
+
+Install:
+----------------------------
+
+1. copy `media/css/cmsplugin_rst.css` to your media folder
+
+2. add `cmsplugin_rst` to INSTALLED_APP of your settings.py
+
+Usage:
+-----------------------------
+
+.. code:: python
+   :linenos:
+
+   import os, path
+   from django.conf import settings
+
+   class MyNewCode(object):
+      ...
+
+ps: if you don't like the line numbers, just get rid of `:linenos:`
+
+And you can custom cmsplugin_rst.css to fit for your site.

@@ -1,0 +1,30 @@
+{% extends "cmsplugin_rst/plugin_change_form.html" %}
+
+{% block fieldsets %}
+{% for fieldset in adminform %}
+<fieldset class="module aligned {{ fieldset.classes }}">
+  {% if fieldset.name %}<h2>{{ fieldset.name }}</h2>{% endif %}
+  {% if fieldset.description %}<div class="description">{{ fieldset.description|safe }}</div>{% endif %}
+  {% for line in fieldset %}
+      <div class="form-row{% if line.errors %} errors{% endif %} {% for field in line %}{{ field.field.name }} {% endfor %} ">
+      {{ line.errors }}
+      {% for field in line %}{% if not field.field.is_hidden %}
+      <div{% if not line.fields|length_is:"1" %} class="field-box"{% endif %}>{% endif %}
+          {% if field.is_checkbox %}
+              {{ field.field }}{{ field.label_tag }}
+          {% else %}
+		  		{% if field.field.is_hidden %}
+					{{ field.field }}
+				{% else %}
+                    <textarea id="markItUp" name="rst" cols="40" rows="10">{{ field.field|cut:'<textarea id="id_rst" rows="10" cols="40" name="rst" class="vLargeTextField">' }}</textarea>
+			  	{% endif %}
+          {% endif %}
+		  {% if not field.field.is_hidden %}
+          {% if field.field.field.help_text %}<p class="help">{{ field.field.field.help_text|safe }}</p>{% endif %}
+      </div>{% endif %}
+      {% endfor %}
+      </div>
+  {% endfor %}
+</fieldset>
+{% endfor %}
+{% endblock %}

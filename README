@@ -8,9 +8,11 @@ It supports pygment code highlight. You need to install pygment first
 Install:
 ----------------------------
 
-1. copy `media/css/cmsplugin_rst.css` to your media folder
+1. copy `media/cmsplugin_rst` and `media/markitup` folders to your media folder
 
-2. add `cmsplugin_rst` to INSTALLED_APP of your settings.py
+2. add `cmsplugin_rst` into INSTALLED_APP of your settings
+
+3. run ./manage.py syncdb
 
 Usage:
 -----------------------------

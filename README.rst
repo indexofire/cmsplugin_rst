@@ -17,14 +17,15 @@ Install:
 Usage:
 -----------------------------
 
-.. code:: python
-   :linenos:
+::
+  .. code:: python
+     :linenos:
 
-   import os, path
-   from django.conf import settings
+     import os, path
+     from django.conf import settings
 
-   class MyNewCode(object):
-       pass
+     class MyNewCode(object):
+         pass
 
 ps: if you don't like the line numbers, just get rid of `:linenos:`
 

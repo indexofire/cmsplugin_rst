@@ -8,7 +8,7 @@ from cms.plugins.text import settings as text_settings
 from django.utils.translation.trans_real import get_language
 
 
-class ReSTEditor(Textarea):
+class MarkItUpWidget(Textarea):
     class Media:
         js = (
             'markitup/jquery.markitup.pack.js',

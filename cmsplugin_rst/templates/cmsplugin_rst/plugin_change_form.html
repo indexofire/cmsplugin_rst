@@ -11,6 +11,9 @@
 <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}markitup/sets/restructuredtext/style.css" />
 {{ media }}
 
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}cmsplugin_rst/css/cmsplugin_rst.css" />
+
+<!-- script to add markItUp -->
 <script type="text/javascript">
 <!--
 $(document).ready(function()	{
@@ -45,8 +48,7 @@ $(document).ready(function()	{
 -->
 </script>
 
-
-
+<!-- script to autoresize iframe of plugin -->
 <script type="text/javascript">
 //<![CDATA[
 (function($) {
@@ -93,8 +95,6 @@ $(document).ready(function()	{
 })(jQuery);
 //]]>
 </script>
-
-
 {% endblock %}
  
 {% block extrastyle %}<link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/forms.css" />{% endblock %}

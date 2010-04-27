@@ -12,7 +12,7 @@
 // http://www.indexofire.com
 // -------------------------------------------------------------------
 myReSTSettings = {
-    nameSpace: 'rst',
+    nameSpace: 'ReST',
 	previewParserPath: '',
 	onShiftEnter: {keepDefault:false, openWith:'\n\n'},
 	markupSet: [

@@ -17,6 +17,7 @@
 					{{ field.field }}
 				{% else %}
                     <textarea id="markItUp" name="rst" cols="40" rows="10">{{ field.field|cut:'<textarea id="id_rst" rows="10" cols="40" name="rst" class="vLargeTextField">' }}</textarea>
+                    <div id="codebox" style="z-index: 11; opacity: 1; display: none;" ><h3>Code Input</h3><textarea cols="80" rows="24" id="code"></textarea><p><a href="" id="addcode">add to markItUp</a></p></div>
 			  	{% endif %}
           {% endif %}
 		  {% if not field.field.is_hidden %}

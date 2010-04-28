@@ -1,6 +1,15 @@
+.rst td, th {
+    border: 0px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
 .rst td {
     padding: 0px;
+    height:26px;
+    line-height: 18px;
 }
+
 .rst td.linenos {
     width: 30px;
 }
@@ -11,6 +20,7 @@
     border: 1px solid #636465;
     overflow: auto;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 /* settings for code block with no line numbers */
@@ -19,7 +29,6 @@
     padding: 4px;
     margin: 0px;
     color: #3C3C3C;
-
     border: 1px solid #636465;
     overflow:auto;
 }
@@ -38,7 +47,9 @@
     width: 30px;
     float: left;
 }
-
+.rst td.linenos div.linenodiv pre {
+    color: #ECECEC;
+}
 /* .. contents:: style */
 .rst .contents {
     border: 2px dashed #ACACAC;
@@ -61,7 +72,6 @@
 /* title style */
 .rst .section h1, h2, h3, h4, h5, h6 {
     padding: 5px 0px;
-    background: #CECCCC;
 }
 .rst .section a {
     display: block;
@@ -86,6 +96,37 @@
     width: 40%;
 }
 
+/* links style */
+.rst p a {
+    color: blue;
+    font: 14px Bold;
+}
+.rst p a:hover {
+    border-bottom: 2px solid blue;
+}
+
+.rst cite {
+    color: #gray;
+}
+
+.rst h1 {
+    font-size: 24px;
+}
+.rst h2 {
+    font-size: 22px;
+}
+.rst h3 {
+    font-size: 20px;
+}
+.rst h4 {
+    font-size: 18px;
+}
+.rst h5 {
+    font-size: 16px;
+}
+.rst h6 {
+    font-size: 14px;
+}
 /* pygments highlight style */
 .rst .highlight .hll{ background-color: #ffffcc }
 .rst .highlight .c  { color: #408080; font-style: italic } /* Comment */

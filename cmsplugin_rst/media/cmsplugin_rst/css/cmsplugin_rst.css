@@ -66,15 +66,12 @@
     margin-bottom: 2px;
 }
 .rst ul.simple a:hover {
-    border-bottom: 4px solid #58AC53;
+    border-bottom: 2px solid #003366;
 }
 
 /* title style */
 .rst .section h1, h2, h3, h4, h5, h6 {
     padding: 5px 0px;
-}
-.rst .section a {
-    display: block;
 }
 
 /* blockquote tag style */
@@ -97,12 +94,12 @@
 }
 
 /* links style */
-.rst p a {
-    color: blue;
-    font: 14px Bold;
+.rst a {
+    color: #3D81EE;
 }
-.rst p a:hover {
-    border-bottom: 2px solid blue;
+.rst a:hover {
+    color:#003366;
+    border-bottom: 2px solid #003366;
 }
 
 .rst cite {

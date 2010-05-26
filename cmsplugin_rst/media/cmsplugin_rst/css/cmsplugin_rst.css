@@ -106,6 +106,22 @@
     color: #gray;
 }
 
+.rst .note {
+    border: 1px solid #003366;
+}
+
+.rst .note .admonition-title {
+    background: #dimgray;
+    color: #ECECEC;
+    padding: 4px;
+    margin: 0px;
+}
+
+.rst .note .last {
+    padding: 4px;
+    margin: 0px;
+}
+
 .rst h1 {
     font-size: 24px;
 }

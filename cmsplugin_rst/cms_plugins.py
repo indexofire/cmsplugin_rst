@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
+from django.conf import settings
+from django.forms.widgets import Media
 from django.utils.translation import ugettext as _
+
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
+
 from cmsplugin_rst.models import ReSTField
 from cmsplugin_rst.forms import ReSTForm
-from django.conf import settings
 
-from django.forms.widgets import Media
 
 class ReSTPlugin(CMSPluginBase):
     model = ReSTField

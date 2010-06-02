@@ -22,7 +22,7 @@ $(document).ready(function()	{
 
     $('#addcode').click(function() {
         code = $('#code').val();
-        $.markItUp( {openWith:'.. code:: [![Your Code Lexar:!:python]!]\n   [![If You Do not Need Line Numbers, Leave BLANK here:!::linenos:]!]\n\n   ', placeHolder:code.split('\n').join("\n   ")});
+        $.markItUp({openWith:'.. code:: [![Your Code Lexar:!:python]!]\n   [![If You Do not Need Line Numbers, Leave BLANK here:!::linenos:]!]\n\n   ', placeHolder:code.split('\n').join("\n   ")});
         return false;
     });
 });

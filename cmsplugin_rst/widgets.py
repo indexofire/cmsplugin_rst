@@ -1,4 +1,6 @@
+# -*- coding: utf-8 -*-
 from os.path import join
+
 from django.conf import settings
 from django.forms import Textarea
 from django.utils.safestring import mark_safe
@@ -9,6 +11,9 @@ from django.utils.translation.trans_real import get_language
 
 
 class MarkItUpWidget(Textarea):
+    """MarkItUp Widget class
+    
+    """
     class Media:
         js = (
             'markitup/jquery.markitup.pack.js',
@@ -32,3 +37,10 @@ class MarkItUpWidget(Textarea):
         final_attrs = self.build_attrs(attrs, name=name)
         return mark_safe(u'<textarea id="markItUp" name="rst"%s>%s</textarea>' % 
             (flatatt(final_attrs), conditional_escape(force_unicode(value))))
+
+class AdminMarkItUpWidget(MarkItUpWidget, AdminTextareaWidget):
+    """Add vLargeTextarea class to MarkItUpWidget so it looks more
+    similar to other admin textareas.
+
+    """
+    pass

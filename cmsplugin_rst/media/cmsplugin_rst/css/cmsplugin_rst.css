@@ -1,3 +1,4 @@
+/* code table style */
 .rst td, th {
     border: 0px;
     font-size: 12px;
@@ -50,6 +51,7 @@
 .rst td.linenos div.linenodiv pre {
     color: #ECECEC;
 }
+
 /* .. contents:: style */
 .rst .contents {
     border: 2px dashed #ACACAC;
@@ -69,11 +71,6 @@
     border-bottom: 2px solid #003366;
 }
 
-/* title style */
-.rst .section h1, h2, h3, h4, h5, h6 {
-    padding: 5px 0px;
-}
-
 /* blockquote tag style */
 .rst blockquote {
     border-left: 5px solid #CACACA;
@@ -82,7 +79,7 @@
     padding-left: 5px;
 }
 
-/* .. sidebar:: style */
+/* sidebar style */
 .rst div.sidebar {
     border: 2px dotted #ACACAC;
     background: #ECECEC;
@@ -102,6 +99,7 @@
     border-bottom: 2px solid #003366;
 }
 
+/* cite style */
 .rst cite {
     color: #gray;
 }
@@ -122,24 +120,26 @@
     margin: 0px;
 }
 
-.rst h1 {
+/* title style */
+.rst .section h1 {
     font-size: 24px;
 }
-.rst h2 {
+.rst .section h2 {
     font-size: 22px;
 }
-.rst h3 {
+.rst .section h3 {
     font-size: 20px;
 }
-.rst h4 {
+.rst .section h4 {
     font-size: 18px;
 }
-.rst h5 {
+.rst .section h5 {
     font-size: 16px;
 }
-.rst h6 {
+.rst .section h6 {
     font-size: 14px;
 }
+
 /* pygments highlight style */
 .rst .highlight .hll{ background-color: #ffffcc }
 .rst .highlight .c  { color: #408080; font-style: italic } /* Comment */

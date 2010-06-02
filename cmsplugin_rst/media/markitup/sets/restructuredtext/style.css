@@ -52,6 +52,15 @@
 	background-image:url(images/preview.png);
 }
 
+.ReST .markItUpHeader ul {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.ReST .markItUpHeader a:hover {
+    border-bottom: none;
+}
+
 /* Overlay */
 #simplemodal-overlay {
     height:100%;

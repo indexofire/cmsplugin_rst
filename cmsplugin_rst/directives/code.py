@@ -1,29 +1,30 @@
 # -*- coding: utf-8 -*-
+from operator import not_
+
 from docutils import nodes
 from docutils.parsers.rst import directives, Directive
+
 from pygments import highlight
 from pygments.util import ClassNotFound
 from pygments.lexers import get_lexer_by_name, guess_lexer, TextLexer
 from pygments.formatters import HtmlFormatter
-from operator import not_
+
 
 class CodeHighlight(Directive) :
-    """
-    A ReStructured Text Directive to highlight code blocks by using pygments.
-
-    It is used with the the following syntax:
-
+    """ReStructured Text Highlight Code Directive
+    
+    Usage:
     .. code:: python
        :linenos:
 
        from django.conf import settings
 
        class MyCode():
-           def refresh(node):
+           def MyFunction():
            ...
-
     """
-    # define options
+    
+    # define directive options
     require_arguments = 0
     optional_arguments = 1
     final_argument_whitespace = True
@@ -32,6 +33,7 @@ class CodeHighlight(Directive) :
         'style' : directives.unchanged,
         'noclasses' : not_,
     }
+    
     # define default options
     defaults = {
         'linenos' : False,

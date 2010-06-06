@@ -4,7 +4,8 @@ from django.db import models
 from django.utils.safestring import mark_safe
 from django.utils.functional import curry
 from django.core.exceptions import ImproperlyConfigured
-from markitup import widgets
+
+from cms_content import widgets
 
 _rendered_field_name = lambda name: '_%s_rendered' % name
 

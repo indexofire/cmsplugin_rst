@@ -104,8 +104,9 @@
     color: #gray;
 }
 
-.rst .note {
+.rst div.note {
     border: 1px solid #003366;
+    margin-bottom: 10px;
 }
 
 .rst .note .admonition-title {

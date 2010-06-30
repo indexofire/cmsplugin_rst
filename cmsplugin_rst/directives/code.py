@@ -11,17 +11,22 @@ from pygments.formatters import HtmlFormatter
 
 
 class CodeHighlight(Directive) :
-    """ReStructured Text Highlight Code Directive
+    """
+    ReStructured Text Highlight Code Directive.
     
     Usage:
+    In your textarea, input lines like this
+    
     .. code:: python
        :linenos:
 
        from django.conf import settings
 
-       class MyCode():
-           def MyFunction():
+       class MyClass(object):
+           def __init__():
            ...
+    
+    It will highlight code by pygments automatically.
     """
     
     # define directive options

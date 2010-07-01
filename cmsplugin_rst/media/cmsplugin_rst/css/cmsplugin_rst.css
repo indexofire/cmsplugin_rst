@@ -18,7 +18,7 @@
 .rst table.highlighttable {
     background: #FFFFFF;
     display: block;
-    border: 1px solid #636465;
+    border: 1px solid #E6E6E6;
     overflow: auto;
     width: 100%;
     margin-bottom: 10px;
@@ -30,7 +30,7 @@
     padding: 4px;
     margin: 0px;
     color: #3C3C3C;
-    border: 1px solid #636465;
+    border: 1px solid #E6E6E6;
     overflow:auto;
 }
 
@@ -41,15 +41,13 @@
 
 /* line number setting */
 .rst td.linenos div.linenodiv {
-    background: #696969;
-    color: #ECECEC;
+    background: #F9FAFA;
+    color: #3C3C3C;
     padding-right: 4px;
+    border-right: 1px solid #E6E6E6;
     text-align: right;
     width: 30px;
     float: left;
-}
-.rst td.linenos div.linenodiv pre {
-    color: #ECECEC;
 }
 
 /* .. contents:: style */

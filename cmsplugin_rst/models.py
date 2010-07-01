@@ -35,4 +35,4 @@ class ReSTField(CMSPlugin):
                                   writer_name="html4css1",
                                   settings_overrides=docutils_settings,
                                   )
-            return force_unicode(parts["body"])
+            return force_unicode(parts["html_body"])

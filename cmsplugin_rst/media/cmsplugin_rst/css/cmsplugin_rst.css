@@ -1,4 +1,7 @@
 /* code table style */
+.rst a {
+    text-decoration: none;
+}
 .rst td, th {
     border: 0px;
     font-size: 12px;
